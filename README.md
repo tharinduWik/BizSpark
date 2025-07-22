@@ -69,7 +69,7 @@ npm start
 - **Backend API**: http://localhost:8000  
 - **API Documentation**: http://localhost:8000/docs
 
-## Troubleshooting
+## ⚠️ Troubleshooting
 
 ### Backend Issues
 
@@ -96,13 +96,13 @@ npm start
 
 2. **"Connection refused"**: Make sure the backend is running on port 8000
 
-## API Endpoints
+## 🚪 API Endpoints
 
 - `POST /query` - Send queries to the AI agent
 - `GET /health` - Check server status
 - `GET /docs` - Interactive API documentation
 
-## Sample Queries
+## 🔢 Sample Queries
 
 Try these queries with your AI agent:
 
@@ -112,7 +112,7 @@ Try these queries with your AI agent:
 - "Compare air quality between rooms"
 - "What are the recent measurements for Room 2?"
 
-## Project Structure
+## 📆 Project Structure
 
 ```
 ai-air-quality-agent/
@@ -137,11 +137,11 @@ ai-air-quality-agent/
     └── sensor_data_Room 4.ndjson
 ```
 
-## Environment Variables
+## 🌐 Environment Variables
 
-Add your OpenAI API key to `backend/.env`:
-```
-OPENAI_API_KEY=your_actual_api_key_here
+Add your Gemini API key to `backend/.env`:
+```env
+GEMINI_API_KEY=your_actual_api_key_here
 ```
 
-The app works without an API key using mock responses.
+The app works with mock data if the API key is not set.
