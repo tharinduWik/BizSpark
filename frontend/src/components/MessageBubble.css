@@ -1,0 +1,202 @@
+/* MessageBubble.css */
+.message-bubble {
+  display: flex;
+  margin-bottom: 12px;
+  max-width: 85%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot-message {
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.message-content {
+  padding: 12px 16px;
+  border-radius: 18px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.user-message .message-content {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.bot-message .message-content {
+  background: #f8f9fa;
+  color: #333;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.message-text {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.bot-message-content {
+  width: 100%;
+}
+
+.message-time {
+  font-size: 11px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 4px;
+  gap: 4px;
+}
+
+.user-message .message-time {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bot-message .message-time {
+  color: #6c757d;
+}
+
+.message-status {
+  font-size: 12px;
+  color: #28a745;
+}
+
+/* Recommended items styling */
+.recommended-items {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e9ecef;
+}
+
+.recommended-items h4 {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.item-card:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.item-name {
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 4px;
+}
+
+.item-price {
+  color: #007bff;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.discount-badge {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 10px;
+  font-weight: 500;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.item-description {
+  color: #6c757d;
+  font-size: 11px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  border-left: 2px solid #e9ecef;
+  padding-left: 8px;
+  font-style: italic;
+}
+
+.item-stock {
+  font-size: 11px;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.in-stock {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.low-stock {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.item-id {
+  font-size: 10px;
+  color: #adb5bd;
+  margin-top: 6px;
+}
+
+.detailed-item {
+  border-left: 3px solid #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .message-bubble {
+    max-width: 95%;
+  }
+  
+  .message-content {
+    padding: 10px 14px;
+  }
+  
+  .message-text {
+    font-size: 13px;
+  }
+  
+  .item-card {
+    padding: 8px;
+  }
+}
